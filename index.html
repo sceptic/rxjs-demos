@@ -1,0 +1,14 @@
+<h1>Practicas RxJS:</h1>
+<h3>Crear Observable</h3>
+<pre>
+  a = 0;
+  // Observable
+  myObs = Rx.Observable.create(observer => { 
+    setInterval(() => { observer.next(a++) }, 3000) 
+  });
+  // Subscriber
+  subscriber = myObs.subscribe(data => console.log('DATA', data));
+</pre>
+<script>
+console.log("Welcome page")
+</script>
